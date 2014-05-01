@@ -31,6 +31,7 @@ define Package/iptables/Default
   SECTION:=net
   CATEGORY:=Network
   SUBMENU:=Firewall
+  TITLE:=iptables shared libraries
   URL:=http://netfilter.org/
 endef
 
