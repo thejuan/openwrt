@@ -5,12 +5,16 @@ PKG_NAME:=python-iptables
 PKG_VERSION:=0.3.0
 PKG_RELEASE:=3
 
-PKG_SOURCE:=v$(PKG_VERSION).tar.gz
+PKG_SOURCE:=OpenWrt-AA.tar.gz
 PKG_SOURCE_URL:=https://github.com/thejuan/python-iptables/archive/
 #PKG_MD5SUM:=6d780d29c1df1acc17195bde7be0e394
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/python-iptables-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python libc
+
+#Rename the output folder as expected by OpenWrt
+TAR_OPTIONS:=-xf - --transform=s/OpenWrt-AA/$(PKG_VERSION)/
+
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -37,6 +41,7 @@ define Package/python-iptables/install
 	$(CP) \
 	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	    $(1)$(PYTHON_PKG_DIR)
+	$(LN) $(TOOLCHAIN_DIR)/lib/libc.so.0 $(1)$(PYTHON_PKG_DIR)/libc.so
 endef
 
 $(eval $(call BuildPackage,python-iptables))
