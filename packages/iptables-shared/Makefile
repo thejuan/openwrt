@@ -20,7 +20,7 @@ PKG_SOURCE_URL:=http://www.netfilter.org/projects/iptables/files \
 	ftp://ftp.no.netfilter.org/pub/netfilter/iptables/
 
 #TODO: firendly this up
-PKG_UNPACK:=. /home/adam/openwrt/include/shell.sh; bzcat /home/adam/OpenWrt-SDK-x86/dl/iptables-1.4.10.tar.bz2 | /bin/tar --strip-components=1 -C /home/adam/OpenWrt-SDK-x86/build_dir/linux-x86_generic/iptables-shared-1.4.10/ -xf -
+PKG_UNPACK:=.$(INCLUDE_DIR)/shell.sh; bzcat $(DL_DIR)/iptables-1.4.10.tar.bz2 | /bin/tar --strip-components=1 -C $(KERNEL_BUILD_DIR)/iptables-shared-1.4.10/ -xf -
 PKG_FIXUP:=autoreconf
 #PKG_INSTALL:=1
 PKG_BUILD_PARALLEL:=1
