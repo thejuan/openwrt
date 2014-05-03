@@ -41,7 +41,7 @@ define Package/python-iptables/install
 	$(CP) \
 	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	    $(1)$(PYTHON_PKG_DIR)
-	$(LN) $(TOOLCHAIN_DIR)/lib/libc.so.0 $(1)$(PYTHON_PKG_DIR)/libc.so
+	$(LN) /lib/libc.so.0 $(1)$(PYTHON_PKG_DIR)/libc.so
 endef
 
 $(eval $(call BuildPackage,python-iptables))
