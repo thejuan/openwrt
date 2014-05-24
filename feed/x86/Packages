@@ -1,0 +1,50 @@
+Package: iptables-shared
+Version: 1.4.10-5
+Depends: libc, kmod-ipt-core, libip4tc, libxtables
+Provides: 
+Source: package/iptables-shared
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: x86
+Installed-Size: 3531
+Filename: iptables-shared_1.4.10-5_x86.ipk
+Size: 4132
+MD5Sum: 90e1a9f5aa02737ec2d63ba9d28b6cf7
+Description:  TODO
+
+Package: netifaces
+Version: 0.8-1
+Depends: libc, python
+Provides: 
+Source: package/python-netifaces
+Section: lang
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: x86
+Installed-Size: 4697
+Filename: netifaces_0.8-1_x86.ipk
+Size: 5294
+MD5Sum: 726fcbf464bc41ec91c68b079e95f2f1
+Description:  Portable access to network interfaces from Python
+
+Package: python-iptables
+Version: 0.3.0-3
+Depends: libc, python, iptables-shared
+Provides: 
+Source: package/python-iptables
+Section: lang
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: x86
+Installed-Size: 24329
+Filename: python-iptables_0.3.0-3_x86.ipk
+Size: 24945
+MD5Sum: 1c55fecf3ebf6bf18f5825d12d29bc25
+Description:  OpenWRT port of python-iptables bindings
