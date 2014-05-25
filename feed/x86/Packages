@@ -29,7 +29,7 @@ Architecture: x86
 Installed-Size: 5283
 Filename: python-netifaces_0.8-1_x86.ipk
 Size: 5294
-MD5Sum: eb300b9a6e48849ae0c006e0c7eefb3f
+MD5Sum: e5cc74534557644729e341e53839e9ff
 Description:  Portable access to network interfaces from Python
 
 Package: python-iptables
