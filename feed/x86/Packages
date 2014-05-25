@@ -11,11 +11,11 @@ Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
 Architecture: x86
 Installed-Size: 3531
 Filename: iptables-shared_1.4.10-5_x86.ipk
-Size: 4132
-MD5Sum: 90e1a9f5aa02737ec2d63ba9d28b6cf7
+Size: 4127
+MD5Sum: a01eee41b3e1c9d3cf9d87cbeb73325d
 Description:  TODO
 
-Package: netifaces
+Package: python-netifaces
 Version: 0.8-1
 Depends: libc, python
 Provides: 
@@ -26,10 +26,10 @@ Essential: no
 Priority: optional
 Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
 Architecture: x86
-Installed-Size: 4697
-Filename: netifaces_0.8-1_x86.ipk
+Installed-Size: 5283
+Filename: python-netifaces_0.8-1_x86.ipk
 Size: 5294
-MD5Sum: 726fcbf464bc41ec91c68b079e95f2f1
+MD5Sum: eb300b9a6e48849ae0c006e0c7eefb3f
 Description:  Portable access to network interfaces from Python
 
 Package: python-iptables
@@ -43,8 +43,8 @@ Essential: no
 Priority: optional
 Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
 Architecture: x86
-Installed-Size: 24329
+Installed-Size: 24946
 Filename: python-iptables_0.3.0-3_x86.ipk
 Size: 24945
-MD5Sum: 1c55fecf3ebf6bf18f5825d12d29bc25
+MD5Sum: eb300b9a6e48849ae0c006e0c7eefb3f
 Description:  OpenWRT port of python-iptables bindings
