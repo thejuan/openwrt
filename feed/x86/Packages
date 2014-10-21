@@ -11,7 +11,7 @@ MD5Sum: 2910b9f66c3ff386cfbe911a6ef1c37f
 SHA256sum: 8af7c998d1bd13e3a55e3a3058345855040da6c0ca77c4a452ea593d66fe5d18
 Description:  TODO
 
-Package: netifaces
+Package: python-netifaces
 Version: 0.10.4-1
 Depends: libc, python
 Source: package/python-netifaces
