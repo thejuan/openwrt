@@ -7,7 +7,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=netifaces
+PKG_NAME:=python-netifaces
 PKG_VERSION:=0.10.4
 PKG_RELEASE:=1
 
@@ -21,7 +21,7 @@ PKG_BUILD_DEPENDS:=python
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
-define Package/netifaces
+define Package/python-netifaces
   SUBMENU:=Python
   SECTION:=lang
   CATEGORY:=Languages
@@ -30,7 +30,7 @@ define Package/netifaces
   DEPENDS:=+python
 endef
 
-define Package/netifaces/description
+define Package/python-netifaces/description
   Portable access to network interfaces from Python
 endef
 
@@ -38,11 +38,11 @@ define Build/Compile
 	$(call Build/Compile/PyMod,,install --prefix="$(PKG_INSTALL_DIR)/usr")
 endef
 
-define Package/netifaces/install
+define Package/python-netifaces/install
 	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
 	$(CP) \
 	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	    $(1)$(PYTHON_PKG_DIR)
 endef
 
-$(eval $(call BuildPackage,netifaces))
+$(eval $(call BuildPackage,python-netifaces))

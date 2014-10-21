@@ -83,6 +83,7 @@ MAKE_FLAGS := \
 define Package/iptables-shared/install
 	$(INSTALL_DIR) $(1)/usr/lib/iptables
 	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_standard.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_set.so $(1)/usr/lib/iptables
 	$(CP) $(PKG_BUILD_DIR)/extensions/libipt_DNAT.so $(1)/usr/lib/iptables
 endef
 

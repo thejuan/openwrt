@@ -4,25 +4,12 @@ Depends: libc, kmod-ipt-core, libip4tc, libxtables
 Source: package/iptables-shared
 Section: net
 Architecture: x86
-Installed-Size: 3344
+Installed-Size: 7780
 Filename: iptables-shared_1.4.21-1_x86.ipk
-Size: 3852
-MD5Sum: 2910b9f66c3ff386cfbe911a6ef1c37f
-SHA256sum: 8af7c998d1bd13e3a55e3a3058345855040da6c0ca77c4a452ea593d66fe5d18
+Size: 8316
+MD5Sum: ba259ee031f8dc76c4abf3800ff8ac10
+SHA256sum: aedb40c1f9bc518a59af04f89cf2a86ddc3997f0cba6453fc74fab64bcb4027a
 Description:  TODO
-
-Package: python-netifaces
-Version: 0.10.4-1
-Depends: libc, python
-Source: package/python-netifaces
-Section: lang
-Architecture: x86
-Installed-Size: 9637
-Filename: netifaces_0.10.4-1_x86.ipk
-Size: 10153
-MD5Sum: f800a647972a609b930d33eadd64651f
-SHA256sum: debd6ea744207d89919fb5f73134c942f9a1db868612cfce1c5ef36e13614229
-Description:  Portable access to network interfaces from Python
 
 Package: python-iptables
 Version: 0.5.0-1
@@ -30,9 +17,23 @@ Depends: libc, python, iptables-shared
 Source: package/python-iptables
 Section: lang
 Architecture: x86
-Installed-Size: 26039
+Installed-Size: 26033
 Filename: python-iptables_0.5.0-1_x86.ipk
-Size: 26495
-MD5Sum: eb693278190c4321f3d04c43afaa972d
-SHA256sum: 83f9d2e31f46376e0c1189a0a0d4fe9239f99bf75b2e2bdd29a5436f95657a19
+Size: 26486
+MD5Sum: 39627a06ad43b7d8f568be7707da77e1
+SHA256sum: 756a27acc09cd3a6e7449c705bdb2f0cc9d935e6fe4b87da7daf442b319ef94c
 Description:  OpenWRT port of python-iptables bindings
+
+Package: python-netifaces
+Version: 0.10.4-1
+Depends: libc, python
+Source: package/python-netifaces
+Section: lang
+Architecture: x86
+Installed-Size: 9634
+Filename: python-netifaces_0.10.4-1_x86.ipk
+Size: 10155
+MD5Sum: 6db8b6724a25a289db6f80583e876c62
+SHA256sum: f507bc7da92b146ca80c55ee32d7e87bf5bc3e07fa20cb84eaa5a9a9132d2838
+Description:  Portable access to network interfaces from Python
+
