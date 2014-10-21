@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=netifaces
-PKG_VERSION:=0.8
+PKG_VERSION:=0.10.4
 PKG_RELEASE:=1
 
 PKG_SOURCE:=netifaces-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://alastairs-place.net/projects/netifaces/
-PKG_MD5SUM:=e57e5983f4c286fac5f8068fbfc5c873
+PKG_SOURCE_URL:=https://pypi.python.org/packages/source/n/netifaces/
+PKG_MD5SUM:=36da76e2cfadd24cc7510c2c0012eb1e
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/netifaces-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python

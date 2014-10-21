@@ -1,50 +1,38 @@
 Package: iptables-shared
-Version: 1.4.10-5
+Version: 1.4.21-1
 Depends: libc, kmod-ipt-core, libip4tc, libxtables
-Provides: 
 Source: package/iptables-shared
 Section: net
-Status: unknown ok not-installed
-Essential: no
-Priority: optional
-Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
 Architecture: x86
-Installed-Size: 3531
-Filename: iptables-shared_1.4.10-5_x86.ipk
-Size: 4127
-MD5Sum: a01eee41b3e1c9d3cf9d87cbeb73325d
+Installed-Size: 3344
+Filename: iptables-shared_1.4.21-1_x86.ipk
+Size: 3852
+MD5Sum: 2910b9f66c3ff386cfbe911a6ef1c37f
+SHA256sum: 8af7c998d1bd13e3a55e3a3058345855040da6c0ca77c4a452ea593d66fe5d18
 Description:  TODO
 
-Package: python-netifaces
-Version: 0.8-1
+Package: netifaces
+Version: 0.10.4-1
 Depends: libc, python
-Provides: 
 Source: package/python-netifaces
 Section: lang
-Status: unknown ok not-installed
-Essential: no
-Priority: optional
-Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
 Architecture: x86
-Installed-Size: 5283
-Filename: python-netifaces_0.8-1_x86.ipk
-Size: 5294
-MD5Sum: e5cc74534557644729e341e53839e9ff
+Installed-Size: 9637
+Filename: netifaces_0.10.4-1_x86.ipk
+Size: 10153
+MD5Sum: f800a647972a609b930d33eadd64651f
+SHA256sum: debd6ea744207d89919fb5f73134c942f9a1db868612cfce1c5ef36e13614229
 Description:  Portable access to network interfaces from Python
 
 Package: python-iptables
-Version: 0.3.0-3
+Version: 0.5.0-1
 Depends: libc, python, iptables-shared
-Provides: 
 Source: package/python-iptables
 Section: lang
-Status: unknown ok not-installed
-Essential: no
-Priority: optional
-Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
 Architecture: x86
-Installed-Size: 24946
-Filename: python-iptables_0.3.0-3_x86.ipk
-Size: 24945
-MD5Sum: eb300b9a6e48849ae0c006e0c7eefb3f
+Installed-Size: 26039
+Filename: python-iptables_0.5.0-1_x86.ipk
+Size: 26495
+MD5Sum: eb693278190c4321f3d04c43afaa972d
+SHA256sum: 83f9d2e31f46376e0c1189a0a0d4fe9239f99bf75b2e2bdd29a5436f95657a19
 Description:  OpenWRT port of python-iptables bindings

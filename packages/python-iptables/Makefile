@@ -33,6 +33,7 @@ define Package/python-iptables/description
 endef
 
 define Build/Compile
+	$(if $(Build/Compile/PyMod),,@echo Python packaging code not found.; false)
 	$(call Build/Compile/PyMod,,install --prefix="$(PKG_INSTALL_DIR)/usr")
 endef
 
@@ -44,4 +45,5 @@ define Package/python-iptables/install
 	$(LN) /lib/libc.so.0 $(1)$(PYTHON_PKG_DIR)/libc.so
 endef
 
+#$(eval $(call PyPackage,python-iptables))
 $(eval $(call BuildPackage,python-iptables))

@@ -9,20 +9,19 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=iptables-shared
-PKG_VERSION:=1.4.10
-PKG_RELEASE:=5
+PKG_VERSION:=1.4.21
+PKG_RELEASE:=1
 
-PKG_MD5SUM:=f382fe693f0b59d87bd47bea65eca198
+PKG_MD5SUM:=536d048c8e8eeebcd9757d0863ebb0c0
 PKG_SOURCE:=iptables-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=http://www.netfilter.org/projects/iptables/files \
 	ftp://ftp.be.netfilter.org/pub/netfilter/iptables/ \
 	ftp://ftp.de.netfilter.org/pub/netfilter/iptables/ \
 	ftp://ftp.no.netfilter.org/pub/netfilter/iptables/
 
-#TODO: firendly this up
-PKG_UNPACK:=.$(INCLUDE_DIR)/shell.sh; bzcat $(DL_DIR)/iptables-1.4.10.tar.bz2 | /bin/tar --strip-components=1 -C $(KERNEL_BUILD_DIR)/iptables-shared-1.4.10/ -xf -
+
+PKG_UNPACK:=.$(INCLUDE_DIR)/shell.sh; bzcat $(DL_DIR)/iptables-$(PKG_VERSION).tar.bz2 | /bin/tar --strip-components=1 -C $(KERNEL_BUILD_DIR)/iptables-shared-$(PKG_VERSION)/ -xf -
 PKG_FIXUP:=autoreconf
-#PKG_INSTALL:=1
 PKG_BUILD_PARALLEL:=1
 
 
