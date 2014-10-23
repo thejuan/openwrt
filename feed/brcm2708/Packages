@@ -1,0 +1,38 @@
+Package: iptables-shared
+Version: 1.4.21-2
+Depends: libc, kmod-ipt-core, libip4tc, libxtables
+Source: package/iptables-shared
+Section: net
+Architecture: brcm2708
+Installed-Size: 8227
+Filename: iptables-shared_1.4.21-2_brcm2708.ipk
+Size: 8777
+MD5Sum: ae325bdc4bda8d3e27ca490e4174a43d
+SHA256sum: b28cd1acd3a6fb0aa4fc01f0922cdc4178278fc452d896353b6d94f2e92f2f5b
+Description:  TODO
+
+Package: python-iptables
+Version: 0.5.0-1
+Depends: libc, python, iptables-shared
+Source: package/python-iptables
+Section: lang
+Architecture: brcm2708
+Installed-Size: 25825
+Filename: python-iptables_0.5.0-1_brcm2708.ipk
+Size: 26293
+MD5Sum: 0cae7f8d4a72be503e2fbddf718df120
+SHA256sum: 7fc6803c20fe3ea8463b8e2b41dd4bd44332971f56e6cc027f72bb1e1aeddb3a
+Description:  OpenWRT port of python-iptables bindings
+
+Package: python-netifaces
+Version: 0.10.4-1
+Depends: libc, python
+Source: package/python-netifaces
+Section: lang
+Architecture: brcm2708
+Installed-Size: 9365
+Filename: python-netifaces_0.10.4-1_brcm2708.ipk
+Size: 9915
+MD5Sum: 91acba14c86d4cb9525b72e6cfd29992
+SHA256sum: 6b8c9e9e6961e20fc26263c7fb4f215ab9c94980ab2f6f55dda88fdbc4c65af7
+Description:  Portable access to network interfaces from Python
