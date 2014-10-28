@@ -1,0 +1,38 @@
+Package: iptables-shared
+Version: 1.4.21-2
+Depends: libc, kmod-ipt-core, libip4tc, libxtables
+Source: package/iptables-shared
+Section: net
+Architecture: ar71xx
+Installed-Size: 8189
+Filename: iptables-shared_1.4.21-2_ar71xx.ipk
+Size: 8728
+MD5Sum: c61e3d4546d75254990cfb9ec36716f5
+SHA256sum: eed56c20556130e42d16a0b16d1c69a44326e7099e293ff45b230fece5857b17
+Description:  TODO
+
+Package: python-iptables
+Version: 0.5.0-1
+Depends: libc, python, iptables-shared
+Source: package/python-iptables
+Section: lang
+Architecture: ar71xx
+Installed-Size: 26036
+Filename: python-iptables_0.5.0-1_ar71xx.ipk
+Size: 26493
+MD5Sum: fd78c4e5bd2d6dfb4dea90cb6914d972
+SHA256sum: 0d42908f3f8399f1e2bbcb2f8b64ca0a28066af146623980b6de779e4e830a65
+Description:  OpenWRT port of python-iptables bindings
+
+Package: python-netifaces
+Version: 0.10.4-1
+Depends: libc, python
+Source: package/python-netifaces
+Section: lang
+Architecture: ar71xx
+Installed-Size: 9200
+Filename: python-netifaces_0.10.4-1_ar71xx.ipk
+Size: 9748
+MD5Sum: 05336a2c01961380a794c5b9dc667ef0
+SHA256sum: 5380655fc53abb28e3a398e3a80d9a05f9b7bda17316eff73e9b029ec96005d7
+Description:  Portable access to network interfaces from Python
