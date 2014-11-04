@@ -10,7 +10,7 @@ include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=iptables-shared
 PKG_VERSION:=1.4.21
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 PKG_MD5SUM:=536d048c8e8eeebcd9757d0863ebb0c0
 PKG_SOURCE:=iptables-$(PKG_VERSION).tar.bz2
@@ -86,6 +86,9 @@ define Package/iptables-shared/install
 	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_set.so $(1)/usr/lib/iptables
 	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_mac.so $(1)/usr/lib/iptables
 	$(CP) $(PKG_BUILD_DIR)/extensions/libipt_DNAT.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_MARK.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_mark.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_time.so $(1)/usr/lib/iptables
 endef
 
 $(eval $(call BuildPackage,iptables-shared))

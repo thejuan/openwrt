@@ -1,14 +1,14 @@
 Package: iptables-shared
-Version: 1.4.21-2
+Version: 1.4.21-3
 Depends: libc, kmod-ipt-core, libip4tc, libxtables
 Source: package/iptables-shared
 Section: net
 Architecture: brcm2708
-Installed-Size: 8227
-Filename: iptables-shared_1.4.21-2_brcm2708.ipk
-Size: 8777
-MD5Sum: ae325bdc4bda8d3e27ca490e4174a43d
-SHA256sum: b28cd1acd3a6fb0aa4fc01f0922cdc4178278fc452d896353b6d94f2e92f2f5b
+Installed-Size: 13619
+Filename: iptables-shared_1.4.21-3_brcm2708.ipk
+Size: 14130
+MD5Sum: b8db4e3f1bea82cb7b7ad4507ed9983d
+SHA256sum: cd0359f233b52236b13b1ff79f03b820808fdff8fb58ef8184cced2693cc5533
 Description:  TODO
 
 Package: python-iptables
