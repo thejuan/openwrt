@@ -37,3 +37,16 @@ MD5Sum: 6db8b6724a25a289db6f80583e876c62
 SHA256sum: f507bc7da92b146ca80c55ee32d7e87bf5bc3e07fa20cb84eaa5a9a9132d2838
 Description:  Portable access to network interfaces from Python
 
+Package: python-ipset
+Version: 6.20.1-1
+Depends: libc, python, ipset
+Source: package/python-ipset
+Section: lang
+Architecture: x86
+Installed-Size: 11041
+Filename: python-ipset_6.20.1-1_x86.ipk
+Size: 11555
+MD5Sum: 596788d102a4ccb977323280708ec374
+SHA256sum: bdb7c8543d8dae63c37c3bb28eca03c4e28dac4f97c1cc50f42e4ae322a1bcd5
+Description:  Portable access to adding to ipsets from Python
+

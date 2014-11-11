@@ -1,6 +1,8 @@
 #!/bin/bash
 
 ROOT_DIR="$(readlink -m $(dirname ${BASH_SOURCE[0]})/..)"
+#ar71xx
+#brcm2708
 TARGET=${1-"x86"}
 SDK="/opt/OpenWrt-SDK-${TARGET}"
 

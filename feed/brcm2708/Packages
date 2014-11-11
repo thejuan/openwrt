@@ -36,3 +36,16 @@ Size: 9915
 MD5Sum: 91acba14c86d4cb9525b72e6cfd29992
 SHA256sum: 6b8c9e9e6961e20fc26263c7fb4f215ab9c94980ab2f6f55dda88fdbc4c65af7
 Description:  Portable access to network interfaces from Python
+
+Package: python-ipset
+Version: 6.20.1-1
+Depends: libc, python, ipset
+Source: package/python-ipset
+Section: lang
+Architecture: brcm2708
+Installed-Size: 9839
+Filename: python-ipset_6.20.1-1_brcm2708.ipk
+Size: 10393
+MD5Sum: 4f4189f52501b78ef65572d48fb93620
+SHA256sum: e040310c9d273741672927e779ed4cc3c7f5f4c94087f31eb1172e2e67dd9c41
+Description:  Portable access to adding to ipsets from Python
