@@ -10,7 +10,7 @@ include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=iptables-shared
 PKG_VERSION:=1.4.21
-PKG_RELEASE:=3
+PKG_RELEASE:=4
 
 PKG_MD5SUM:=536d048c8e8eeebcd9757d0863ebb0c0
 PKG_SOURCE:=iptables-$(PKG_VERSION).tar.bz2
@@ -76,7 +76,7 @@ MAKE_FLAGS := \
 	$(TARGET_CONFIGURE_OPTS) \
 	COPT_FLAGS="$(TARGET_CFLAGS)" \
 	KERNEL_DIR="$(LINUX_DIR)/user_headers/" PREFIX=/usr \
-	KBUILD_OUTPUT="$(LINUX_DIR)" 
+	KBUILD_OUTPUT="$(LINUX_DIR)"
 	#This is what statically links the files we want made dynamic
 	#BUILTIN_MODULES="$(patsubst ip6t_%,%,$(patsubst ipt_%,%,$(patsubst xt_%,%,$(IPT_BUILTIN) $(IPT_CONNTRACK-m) $(IPT_NAT-m))))"
 
@@ -89,6 +89,9 @@ define Package/iptables-shared/install
 	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_MARK.so $(1)/usr/lib/iptables
 	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_mark.so $(1)/usr/lib/iptables
 	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_time.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_limit.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libipt_LOG.so $(1)/usr/lib/iptables
+	$(CP) $(PKG_BUILD_DIR)/extensions/libxt_tcp.so $(1)/usr/lib/iptables
 endef
 
 $(eval $(call BuildPackage,iptables-shared))
