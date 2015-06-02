@@ -1,14 +1,14 @@
 Package: iptables-shared
-Version: 1.4.21-3
+Version: 1.4.21-4
 Depends: libc, kmod-ipt-core, libip4tc, libxtables
 Source: package/iptables-shared
 Section: net
 Architecture: ar71xx
-Installed-Size: 13647
-Filename: iptables-shared_1.4.21-3_ar71xx.ipk
-Size: 14154
-MD5Sum: 8688dad37489af59db7870b1d80efd07
-SHA256sum: 5f24928df59189e2b749af3399cd64545aebb93686ea8f2a9479e33391940c2c
+Installed-Size: 18831
+Filename: iptables-shared_1.4.21-4_ar71xx.ipk
+Size: 19366
+MD5Sum: 781e5c9dc929e6cef72ff15eaa83f5ab
+SHA256sum: 0c286b6a64b170c6bce3f0e5d99089300e4b769e6d711dba22b24fa62e1c389d
 Description:  TODO
 
 Package: python-iptables
