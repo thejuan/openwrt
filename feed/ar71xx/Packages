@@ -11,6 +11,19 @@ MD5Sum: 781e5c9dc929e6cef72ff15eaa83f5ab
 SHA256sum: 0c286b6a64b170c6bce3f0e5d99089300e4b769e6d711dba22b24fa62e1c389d
 Description:  TODO
 
+Package: python-ipset
+Version: 6.20.1-1
+Depends: libc, python, ipset
+Source: package/python-ipset
+Section: lang
+Architecture: ar71xx
+Installed-Size: 10367
+Filename: python-ipset_6.20.1-1_ar71xx.ipk
+Size: 10922
+MD5Sum: 8e6834f7e121f3e64bd7f8335e5cb9d7
+SHA256sum: c8af12e22cd7abf9ae3eabcf163dd7d1c3fed66a29b203552ebb030e78b988f4
+Description:  Portable access to adding to ipsets from Python
+
 Package: python-iptables
 Version: 0.5.0-1
 Depends: libc, python, iptables-shared
@@ -37,15 +50,16 @@ MD5Sum: 05336a2c01961380a794c5b9dc667ef0
 SHA256sum: 5380655fc53abb28e3a398e3a80d9a05f9b7bda17316eff73e9b029ec96005d7
 Description:  Portable access to network interfaces from Python
 
-Package: python-ipset
-Version: 6.20.1-1
-Depends: libc, python, ipset
-Source: package/python-ipset
+Package: python-pcap
+Version: 1.1-5
+Depends: libc, python-mini, libpcap
+Source: package/pypcap
 Section: lang
 Architecture: ar71xx
-Installed-Size: 10367
-Filename: python-ipset_6.20.1-1_ar71xx.ipk
-Size: 10922
-MD5Sum: 8e6834f7e121f3e64bd7f8335e5cb9d7
-SHA256sum: c8af12e22cd7abf9ae3eabcf163dd7d1c3fed66a29b203552ebb030e78b988f4
-Description:  Portable access to adding to ipsets from Python
+Installed-Size: 20852
+Filename: python-pcap_1.1-5_ar71xx.ipk
+Size: 21197
+MD5Sum: eb68a75703673cccf8fc37272b368a75
+SHA256sum: 921666fb277ab7c1428e5503fb36e2474b438ab83869aab1cad7c149e122f531
+Description:  Python interface to lipcap
+
