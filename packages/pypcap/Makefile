@@ -14,8 +14,8 @@ PKG_RELEASE:=5
 PKG_SOURCE:=v$(PKG_VERSION).$(PKG_RELEASE).zip
 PKG_SOURCE_URL:=https://github.com/pynetwork/pypcap/archive
 PKG_MD5SUM:=d3d024656d528e140e8eb9457770948a
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION).$(PKG_RELEASE)
-PKG_BUILD_DEPENDS:=python distribute
+
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
