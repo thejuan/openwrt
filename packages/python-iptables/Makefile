@@ -25,7 +25,7 @@ define Package/python-iptables
   CATEGORY:=Languages
   TITLE:=python-iptables
   URL:=https://github.com/thejuan/python-iptables
-  DEPENDS:=+python +libc +iptables-shared
+  DEPENDS:=+python-base +libc +iptables-shared
 endef
 
 define Package/python-iptables/description

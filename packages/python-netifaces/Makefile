@@ -16,7 +16,7 @@ PKG_SOURCE_URL:=https://pypi.python.org/packages/source/n/netifaces/
 PKG_MD5SUM:=36da76e2cfadd24cc7510c2c0012eb1e
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/netifaces-$(PKG_VERSION)
-PKG_BUILD_DEPENDS:=python
+PKG_BUILD_DEPENDS:=python-base
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)

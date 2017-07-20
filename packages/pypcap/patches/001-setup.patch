@@ -1,0 +1,21 @@
+=== modified file 'setup.py'
+--- a/setup.py	2017-05-02 20:17:25.000000000 +1000
++++ b/setup.py	2017-07-20 17:14:46.966443222 +1000
+@@ -27,10 +27,13 @@
+ 
+ def get_extension():
+     # A list of all the possible search directories
+-    dirs = ['/usr', sys.prefix] + glob.glob('/opt/libpcap*') + \
+-        glob.glob('../libpcap*') + glob.glob('../wpdpack*') + \
+-        glob.glob('/Applications/Xcode.app/Contents/Developer/Platforms/' +
+-                  'MacOSX.platform/Developer/SDKs/*')
++    if "PCAP_HOME" in os.environ:
++	dirs = [os.environ["PCAP_HOME"]]
++    else:
++        dirs = ['/usr', sys.prefix] + glob.glob('/opt/libpcap*') + \
++	  glob.glob('../libpcap*') + glob.glob('../wpdpack*') + \
++	  glob.glob('/Applications/Xcode.app/Contents/Developer/Platforms/' +
++	          'MacOSX.platform/Developer/SDKs/*')
+ 
+     for d in dirs:
+         search_dirs = [

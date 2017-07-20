@@ -9,11 +9,13 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=pypcap
 PKG_VERSION:=1.1
-PKG_RELEASE:=5
+PKG_RELEASE:=6
 
 PKG_SOURCE:=v$(PKG_VERSION).$(PKG_RELEASE).zip
 PKG_SOURCE_URL:=https://github.com/pynetwork/pypcap/archive
-PKG_MD5SUM:=d3d024656d528e140e8eb9457770948a
+PKG_MD5SUM:42979d5169c3211733aa71a04c379c84
+
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION).$(PKG_RELEASE)
 
 PKG_BUILD_DEPENDS:=python
 
@@ -26,19 +28,19 @@ define Package/python-pcap
   CATEGORY:=Languages
   TITLE:=Python interface to lipcap
   URL:=http://code.google.com/p/pypcap/
-  DEPENDS:=+python-mini +libpcap
+  DEPENDS:=+python-base +libpcap
 endef
 
-define PyPackage/python-pcap/filespec
-+|$(PYTHON_PKG_DIR)/pcap.so
-endef
+#define PyPackage/python-pcap/filespec
+# +|$(PKG_BUILD_DIR)/build/lib.linux2-2.7/pcap.so
+#endef
 
 TARGET_CFLAGS += -DHAVE_PCAP_FILE=1
 
 define Build/Compile
 	$(if $(Build/Compile/PyMod),,@echo Python packaging code not found.; false)
 	$(call Build/Compile/PyMod,., \
-		install --prefix="$(PKG_INSTALL_DIR)/usr", \
+		install --root="$(PKG_INSTALL_DIR)" --prefix="/usr", \
 		PCAP_HOME="$(STAGING_DIR)/usr" \
 	)
 endef

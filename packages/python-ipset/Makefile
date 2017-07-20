@@ -23,7 +23,7 @@ define Package/python-ipset
   SECTION:=lang
   CATEGORY:=Languages
   TITLE:=Python Ipset
-  DEPENDS:=+python +ipset
+  DEPENDS:=+python-base +ipset
 endef
 
 define Package/python-ipset/description
