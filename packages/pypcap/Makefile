@@ -17,7 +17,7 @@ PKG_MD5SUM:42979d5169c3211733aa71a04c379c84
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION).$(PKG_RELEASE)
 
-PKG_BUILD_DEPENDS:=python
+PKG_BUILD_DEPENDS:=python-setuptools
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)

@@ -27,7 +27,7 @@ define Package/python-netifaces
   CATEGORY:=Languages
   TITLE:=netifaces
   URL:=http://alastairs-place.net/projects/netifaces/
-  DEPENDS:=+python
+  DEPENDS:=+python-base
 endef
 
 define Package/python-netifaces/description
