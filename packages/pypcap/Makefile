@@ -17,7 +17,7 @@ PKG_MD5SUM:42979d5169c3211733aa71a04c379c84
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION).$(PKG_RELEASE)
 
-PKG_BUILD_DEPENDS:=python-setuptools
+PKG_BUILD_DEPENDS:=python distribute
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -30,10 +30,6 @@ define Package/python-pcap
   URL:=http://code.google.com/p/pypcap/
   DEPENDS:=+python-base +libpcap
 endef
-
-#define PyPackage/python-pcap/filespec
-# +|$(PKG_BUILD_DIR)/build/lib.linux2-2.7/pcap.so
-#endef
 
 TARGET_CFLAGS += -DHAVE_PCAP_FILE=1
 
