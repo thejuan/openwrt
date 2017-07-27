@@ -1,0 +1,9 @@
+--- pypcap/setup.py	2016-08-30 16:42:17.459315220 +1000
++++ pypcap.new/setup.py	2016-08-30 15:41:46.117394612 +1000
+@@ -1,5 +1,5 @@
+ """Setup for pycapy"""
+-from setuptools import setup, Extension
++from distutils.core import setup, Extension
+ import glob
+ import os
+ import sys
